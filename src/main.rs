@@ -1,5 +1,7 @@
+use crate::error::TgitError;
+
 mod error;
 
 fn main() {
-    println!("Hello, world!");
+  println!("{}", TgitError::InvalidCommit);
 }
