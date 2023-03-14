@@ -1,3 +1,4 @@
+// commit hash, blob hash
 use crypto::digest::Digest;
 use crypto::sha1::Sha1;
 use std::fs::File;
