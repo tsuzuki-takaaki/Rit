@@ -6,18 +6,6 @@ use std::io;
 use std::io::Read;
 use std::path::PathBuf;
 
-pub enum Tree {
-  BlogEntry { 
-    name: String,
-    hash: String
-  },
-  TreeEntry {
-    name: String,
-    hash: String,
-    children: Vec<Tree>,
-  }
-}
-
 pub struct Blob {
   pub hash: String,     // hash value of file content
   pub data: Vec<u8> ,   // file content(blob)
